@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <link rel="stylesheet" href="style.css">
+    <title>About Cats Form</title>
+</head>
+<body>
+    <h1>Tell Me About Your Cat!</h1>
+    <img src="cats.png">
+    
+    <h2>Please fill out the form below:</h2>
+    
+    <form action="results.html" method="GET">
+        <div>
+            <label for="name">What is your cat's <strong>name?</strong></label>
+            <input type="text" name="name" id="name" required>
+        </div>
+        <br>
+        <div>
+            <label for="age">How <strong>old</strong> is your cat?</label>
+            <input type="number" name="age" id="age" min="1" max="20">
+        </div>
+        <br>
+        <div>
+            <label for="eyeColor">What is their <strong>eye color</strong>?</label>
+            <select name="eyeColor" id="eyeColor">
+                <option value="Green">Green</option>
+                <option value="Blue">Blue</option>
+                <option value="Gold">Gold</option>
+                <option value="Brown">Brown</option>
+                <option value="Black">Black</option>
+            </select>
+        </div>
+        <div>
+            <p>Is your cat <strong>male</strong> or <strong>female</strong>?</p>
+            <div>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male">
+            </div>
+            <div>
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female">
+            </div>
+        </div>
+        <br>
+        <div>
+            <label for="color">What <strong>color</strong> is your cat?</label>
+            <input type="text" name="color" id="color">
+        </div>
+        <br>
+        <div class="aboutCat">   
+            <label for="aboutCat">Tell me more about your cat:</label>
+            <textarea id="aboutCat" name="aboutCat"></textarea>
+        </div> 
+        <br>
+    <button type="reset">Reset</button>    
+    <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
